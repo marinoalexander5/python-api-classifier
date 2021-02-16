@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifier List</title>
+</head>
+<body>
+    {% for classifier_obj in classifier_objects %}
+        <div>
+            <img src="{{ classifier_obj.img.url }}" />
+            <h3>Prediction: {{ classifier_obj.prediction }}</h3>
+        </div>
+    {% endfor %}
+</body>
+</html>
